@@ -1,0 +1,59 @@
+/***** contact form *****/
+#contact-form {
+	position:relative;
+	vertical-align:top;
+	z-index:1;
+	padding-right:12px;
+	padding-left:3px;
+}
+	#contact-form fieldset {border:none; padding:0; width:100%; overflow:hidden;}
+		#contact-form .fleft{float: left;}
+		#contact-form .fright{float: right;}
+		#contact-form label {display:block; min-height:64px; position:relative;}
+			#contact-form .message{min-height:203px;}
+			#contact-form strong{display:block; font:normal 14px/18px Arial, Helvetica, sans-serif; color:#939393;}
+			#contact-form input, #contact-form textarea {
+				padding:6px 10px;
+				margin:0;
+				font: 14px Arial, Helvetica, sans-serif;
+				color:#939393;
+				background: #fff;
+				outline:none;
+				border:1px solid #aeaeac;
+				width:251px;
+			}
+			#contact-form .area .error {float:none;}
+			#contact-form textarea {
+				width:269px;
+				height:144px;
+				resize:none;
+				overflow:auto;
+			}
+			#contact-form .success {display:none; margin-bottom:15px;}
+			#contact-form .error,
+			#contact-form .empty {
+				color:#ca3535;
+				font-size:11px;
+				line-height:14px;
+				display:none;
+				overflow:hidden;
+				margin-bottom:5px;
+			}
+.buttons-wrapper{text-align:right; position:relative;}
+.buttons-wrapper a {cursor:pointer;}
+	.buttons-wrapper a[data-type="reset"]{margin-right:15px;}
+
+@media only screen and (max-width: 995px) {
+	#contact-form {padding-right:0px; padding-left:0px;}
+	#contact-form .message{min-height:195px;}
+	#contact-form input{width:200px;}
+	#contact-form textarea{width:220px;}
+}
+@media only screen and (max-width: 767px){
+	#contact-form .fleft, #contact-form .fright{float: none;}
+	#contact-form input{width:251px;}
+	#contact-form textarea{width:398px;}
+}
+@media only screen and (max-width: 479px){
+	#contact-form input, #contact-form textarea{width:278px;}
+}

@@ -1,0 +1,17 @@
+.table-bordered{
+    border-color: #ffa200;
+}
+.listin>ul{
+    list-style: none;
+  }
+  .listin>ul>li{
+      margin-bottom:3px;
+  }
+  .listin>ul>li::before {
+    content: "\2022";
+    color: #ffa200;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1.5em;
+    margin-left: 1em;
+  }
